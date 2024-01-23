@@ -1,0 +1,11 @@
+kind create cluster --config=k8s/kind.yaml --name=foo
+
+kubectl apply -f file -n=namespace || && watch -n1 kubectl get pods
+kubectl config (get-clusters|get-contexts|view|set-context)
+kubectl config use-context foo
+kubectl get (nodes|pod|service,svc|deployments|hpa|storageclass,sc|pv|pvc|ns|serviceaccounts) -n=namespace
+kubectl describe pod name
+kubectl port-forward (service/name|pod) port:port
+kubectl exec -it podname -- bash
+kubectl create (namespace,ns) name
+kubectl api-resources
